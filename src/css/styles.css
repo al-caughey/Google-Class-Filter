@@ -1,0 +1,16 @@
+#grades-filter {
+    margin-right: 40px;
+    padding-left: 6px;
+	width: 120px;
+}
+.hidden{
+	display:none;
+}
+.no-matches {
+    border: 2px double #F00;
+    background-color: #FF000033;
+}
+img#icon48 {
+    height: 28px;
+    vertical-align: middle;
+}

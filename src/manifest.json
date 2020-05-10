@@ -1,0 +1,38 @@
+{
+    "name": "Google Classroom Grades Filter",
+    "description": "A simple(r) way to filter assignments in your Google Gradebook",
+    "permissions": [ "storage" ],
+    "manifest_version": 2,
+	"version": "0.1.3",
+	"author": "Al Caughey",
+    "content_scripts": [
+		{
+			"matches": [
+				"https://classroom.google.com/*c/*"
+			],
+			"css": [
+				"css/styles.css"
+			],
+			"js": [
+				"js/filter.js"
+			],
+			"run_at": "document_idle",
+			"all_frames": false
+		}
+    ],
+	"browser_action": {
+		"default_icon": {
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		},
+		"default_popup": "html/popup.html",
+		"default_title": "Grades Filter"
+	},
+  	"icons": {
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"web_accessible_resources": [
+		"images/*.png"
+	]
+  }
